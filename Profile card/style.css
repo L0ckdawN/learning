@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+h2,
+p {
+  font-size: 2rem;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+body {
+  display: flex;
+  background: hsl(185, 75%, 39%);
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.bg-top {
+  position: absolute;
+  top: -30%;
+  left: -5%;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: -35%;
+  right: -5%;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  background: white;
+  border-radius: 2rem;
+}
+.container img {
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.victor {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.victor-img {
+  position: absolute;
+  top: 30%;
+}
+.victor-img img {
+  border: 1rem solid white;
+  border-radius: 50%;
+}
+.victor-age {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+.victor-age h1 {
+  padding: 2rem 0rem;
+  margin-right: 1rem;
+}
+.victor h2 {
+  padding-bottom: 3rem;
+}
+.socials {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-top: 2px solid hsl(227, 10%, 46%);
+  padding: 2rem;
+}
+.socials h1 {
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  .bg-bottom {
+    width: 100%;
+    bottom: -35%;
+    right: -40%;
+  }
+  .bg-top {
+    width: 100%;
+    top: -35%;
+    left: -40%;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .victor-img {
+    position: absolute;
+    top: 15%;
+  }
+  .victor-img img {
+    border: 0.5rem solid white;
+  }
+}
