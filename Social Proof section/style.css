@@ -1,0 +1,228 @@
+/* Global style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Spartan", sans-serif;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h3,
+h4 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+h3 {
+  font-weight: 500;
+}
+h4 {
+  font-weight: 400;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+section {
+  min-height: 100vh;
+  background: whitesmoke;
+  position: relative;
+}
+span {
+  font-size: 3rem;
+  color: orange;
+}
+.bg-top {
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg-pattern-top-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%;
+  left: -70%;
+  overflow: hidden;
+}
+.bg-bottom {
+  background: url("./images/bg-pattern-bottom-desktop.svg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+/* Title and stars review section */
+.title-stars-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-title p {
+  color: hsl(0, 0%, 48%);
+}
+
+.stars-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 5rem;
+}
+.stars {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: hsl(300, 22%, 90%);
+  padding: 0.75rem 0rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.star-1 {
+  transform: translateX(-10%);
+}
+.star-3 {
+  transform: translateX(10%);
+}
+/* Testimonial cards */
+.review-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+  width: 70%;
+  margin: 0 auto;
+  transform: translateX(-5%);
+}
+.review-user {
+  width: 30%;
+  background: hsl(300, 43%, 22%);
+  border-radius: 1rem;
+  color: white;
+  padding: 2rem 2rem 5rem;
+}
+.review-user h3 {
+  font-weight: 700;
+}
+.review-user h4 {
+  color: hsl(333, 80%, 67%);
+}
+.image-name-container {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+.image-name-container img {
+  border-radius: 50%;
+}
+.name-verify {
+  margin-left: 2rem;
+}
+
+.review-2 {
+  transform: translateY(10%);
+}
+.review-3 {
+  transform: translateX(10%);
+  transform: translateY(20%);
+}
+
+@media screen and (min-width: 319px) and (max-width: 1500px) {
+  html {
+    font-size: 50%;
+  }
+  .bg-top {
+    width: 100%;
+    height: 100%;
+    background: url("/images/bg-pattern-top-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: -70%;
+    overflow: hidden;
+  }
+  .bg-bottom {
+    background: url("./images/bg-pattern-bottom-mobile.svg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+  }
+  .title-stars-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-title {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .stars-container {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+    align-items: center;
+  }
+  .stars {
+    width: 100%;
+    padding: 2rem 5rem;
+    flex-direction: column;
+  }
+  .star-1 {
+    transform: none;
+  }
+  .star-2 {
+    transform: none;
+  }
+  .star-3 {
+    transform: none;
+  }
+  .review-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    transform: none;
+  }
+  .review-user {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .review-2 {
+    transform: none;
+  }
+  .review-3 {
+    transform: none;
+    transform: none;
+  }
+}
