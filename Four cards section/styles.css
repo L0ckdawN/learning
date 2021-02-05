@@ -1,0 +1,143 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 98%);
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 2rem;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+.card p {
+  font-size: 1.5rem;
+}
+.thin {
+  font-weight: 200;
+}
+.bold {
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.normal-font {
+  font-weight: 400;
+  text-align: center;
+}
+/* Title */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+/*Card Section */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  border-top: 0.5rem solid;
+  padding: 3rem;
+  width: 30%;
+  box-shadow: 2px 2px 20px hsl(229, 6%, 66%);
+  border-radius: 1rem;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.card-2 {
+  margin-bottom: 3rem;
+}
+.card-2,
+.card-3 {
+  width: 90%;
+}
+.card p {
+  margin-bottom: 10rem;
+  line-height: 1.5;
+}
+.card h2 {
+  margin-bottom: 2rem;
+}
+.card img {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.card-1 {
+  border-color: hsl(180, 62%, 55%);
+}
+.card-2 {
+  border-color: hsl(0, 78%, 62%);
+}
+.card-3 {
+  border-color: hsl(34, 97%, 64%);
+}
+.card-4 {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/* Media QUERIES*/
+@media (max-width: 1363px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1135px) {
+  html {
+    font-size: 50%;
+  }
+  .card p {
+    font-size: 1.6rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .card-1,
+  .card-3 {
+    margin-bottom: 3rem;
+  }
+  .card {
+    width: 50%;
+  }
+  .card-container {
+    width: 100%;
+  }
+}
